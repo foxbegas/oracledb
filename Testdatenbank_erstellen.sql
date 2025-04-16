@@ -6,7 +6,7 @@ V0.9
 
 --Sicherheitscheck, damit nicht die falsche Datenbank verwendet wird
 --! Bricht derzeit noch mit einem Fehler ab, wenn die SID falsch ist. Auch gut.
-prompt "Überprüfe SID..."
+prompt "Ueberpruefe SID..."
 
 DECLARE
   my_sid varchar2(7);
@@ -34,15 +34,15 @@ prompt "Wartungsmodus aktivieren..."
 
 prompt "Wartungsmodus aktiv."
 
---Rollen löschen
-prompt "Lösche Rollen..."
+--Rollen loeschen
+prompt "Loesche Rollen..."
 
 	drop user <user> cascade;
 	drop role <ROLE>;
 
-prompt "Rollen gelöscht."
+prompt "Rollen geloescht."
 
---Rollen neu erstellen, hier werden ein paar Beispiele aufgeführt
+--Rollen neu erstellen, hier werden ein paar Beispiele aufgefuehrt
 prompt "Erstelle Rollen neu..."
 
 	create role <ROLE> not identified;
